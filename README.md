@@ -173,4 +173,4 @@ Try using matplotlib to make a die-rolling visualization, and use Pygal to make 
 
 &nbsp; | &nbsp; | &nbsp; | &nbsp;
 ----|----|----|----
-[&#10094; Prev](../pcc-chapter-14)| &nbsp; | &nbsp; | &nbsp;[Next &#10095;](../pcc-chapter-16)
+[&#10094; Prev](../../../pcc-chapter-14)| &nbsp; | &nbsp; | &nbsp;[Next &#10095;](../../../pcc-chapter-16)
