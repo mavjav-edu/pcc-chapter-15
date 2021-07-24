@@ -1,4 +1,5 @@
-import pygal
+from plotly.graph_objs import Bar, Layout
+from plotly import offline
 
 from die import Die
 
@@ -20,13 +21,11 @@ for value in range(2, max_result+1):
     frequencies.append(frequency)
     
 # Visualize the results.
-hist = pygal.Bar()
-hist.force_uri_protocol = 'http'
+x_values = list(range(2, max_result+1))
+data = [Bar(x=x_values, y=frequencies)]
 
-hist.title = "Results of rolling two D6 dice 1000 times."
-hist.x_labels = ['2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
-hist.x_title = "Result"
-hist.y_title = "Frequency of Result"
-
-hist.add('D6 + D6', frequencies)
-hist.render_to_file('dice_visual.svg')
+x_axis_config = {'title': 'Result', 'dtick': 1}
+y_axis_config = {'title': 'Frequency of Result'}
+my_layout = Layout(title='Results of rolling two D6 dice 1000 times',
+        xaxis=x_axis_config, yaxis=y_axis_config)
+offline.plot({'data': data, 'layout': my_layout}, filename='d6_d6.html')
