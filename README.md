@@ -6,7 +6,7 @@ code to explore the patterns and connections in a data set. A data set
 can be just a small list of numbers that fits in one line of code or
 many gigabytes of data.
 
-## TRY IT YOURSELF #1
+## TRY IT YOURSELF Ⓐ
 
 <span id="ch15exe1"></span>**15-1. Cubes:** A number raised to the third
 power is a *cube*. Plot the first five cubic numbers, and then plot the
@@ -18,7 +18,7 @@ your cubes plot.
 
 
 <span id="page_339"></span>
-## TRY IT YOURSELF #2
+## TRY IT YOURSELF Ⓑ
 
 <span id="ch15exe3"></span>**15-3. Molecular Motion:** Modify
 *rw_visual.py* by replacing `plt.scatter()` with `plt.plot()`. To
@@ -48,7 +48,7 @@ y_step = get_step()
 This refactoring should reduce the size of `fill_walk()` and make the
 method easier to read and understand.
 
-## TRY IT YOURSELF #3
+## TRY IT YOURSELF Ⓒ
 
 <span id="ch15exe6"></span>**15-6. Automatic Labels:** Modify
 *die_visual.py* and *dice_visual.py* by replacing the list we used to
